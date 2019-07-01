@@ -22,5 +22,8 @@ func main() {
 	map2 := map[string]string{"A": "65", "a": "97"}
 	fmt.Println(map2)
 
-	map3 := map[string][]string{"in": ["India", "Bharat"]}
+	map3 := map[string][]string{
+		"in": []string{"India", "Bharat"},
+	}
+	fmt.Println(map3)
 }
