@@ -5,7 +5,7 @@
 // Distributed under terms of the MIT license.
 //
 
-package main
+package ch1
 
 import (
 	"bufio"
@@ -13,7 +13,8 @@ import (
 	"os"
 )
 
-func dup1() {
+// Dup prints duplicate entries from stdio
+func Dup() {
 	counts := make(map[string]int)
 	input := bufio.NewScanner(os.Stdin)
 	for input.Scan() {

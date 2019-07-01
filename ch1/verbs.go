@@ -5,7 +5,7 @@
 // Distributed under terms of the MIT license.
 //
 
-package main
+package ch1
 
 import "fmt"
 
