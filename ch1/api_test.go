@@ -1,7 +1,7 @@
 package ch1
 
 import (
-    "github.com/toransahu/go-misc/utils/test"
+    "github.com/toransahu/go-misc/utils/test/assert"
     "testing"
 )
 
@@ -21,6 +21,5 @@ func TestPAPI_GetApolloVersion(t *testing.T) {
     papi := PAPI{
         apollo:mockedApollo,
     }
-    assert := new(test.Assert)  // or Assert{}
     assert.Equal(t, papi.GetApolloVersion(), "v0.1")
 }
