@@ -11,13 +11,8 @@ import (
 	"encoding/json"
 )
 
-type Message struct {
-	Id     uint16
-	Name   string
-	secret string
-}
 
-func (m *Message) encode() ([]byte, error) {
+func (m *Message) Encode() ([]byte, error) {
 	bytes, err := json.Marshal(m)
 	if err != nil {
 		return nil, err
