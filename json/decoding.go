@@ -9,6 +9,7 @@ package json
 
 import "encoding/json"
 
+// Decode a JSON bytes into interface -> struct/map/slice/array
 func Decode(bytes []byte, v interface{}) error {
 	err := json.Unmarshal(bytes, v)
 	if err != nil {

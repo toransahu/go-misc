@@ -11,7 +11,7 @@ import (
 	"encoding/json"
 )
 
-
+// Encode an Message typed struct into JSON bytes
 func (m *Message) Encode() ([]byte, error) {
 	bytes, err := json.Marshal(m)
 	if err != nil {

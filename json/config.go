@@ -1,6 +1,5 @@
 package json
 
-
 // Message is an structure for message being passed as JSON
 type Message struct {
 	ID     uint16 `json:"id"`
