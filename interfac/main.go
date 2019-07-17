@@ -39,7 +39,7 @@ func UseInterface() {
 	fmt.Println(i2)
 }
 
-// UseInterface explains usage of empty inteface{} & type assertions.
+// UseInterfaceTypeAssertion explains usage of empty inteface{} & type assertions.
 func UseInterfaceTypeAssertion() {
 	var i interface{}
 	i = "Some String"
