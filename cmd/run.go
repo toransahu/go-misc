@@ -8,6 +8,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/toransahu/go-misc/ch1"
 	"github.com/toransahu/go-misc/jsons"
 )
@@ -16,4 +17,11 @@ func main() {
 	fmt.Println(ch1.Sum(1, 2))
 	// ch1.Dup()
 	jsons.JSONReferenceType()
+	type Abc struct {
+		message string
+		no      int `json:"-"`
+	}
+
+	a := Abc{"hello"}
+	fmt.Println(a)
 }
